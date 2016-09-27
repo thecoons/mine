@@ -50,7 +50,7 @@ fi
 
 ### Apparence **shell**
 On configure le prompte pour avoir accés au information du projet **Git** dans le dossier courant. On utilise également de jolies couleurs chaudes pour se détendre.  
-Ps: **Git** doit être installé ...
+**Git** doit être installé ...
 ```sh
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM=gnome-256color

@@ -56,10 +56,12 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 # Note: bind used instead of sticking these in .inputrc
 if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
 
-alias bashreload='cp ~/mine/.bashrc ~/;. ~/.bashrc'
-alias bash_export='cp ~/.bashrc ~/mine/.bashrc;git push --repo ~/mine/'
+alias bash_reload='cp ~/mine/.bashrc ~/;. ~/.bashrc'
+alias bash_export='cp ~/.bashrc ~/mine/.bashrc'
 alias hg='history | grep '
-alias l='ls -lah'
+alias l='ls -lah --color'
+alias k='clear'
+alias rldbash='. ~/.bashrc'
 
 function extract {
  if [ -z "$1" ]; then
@@ -92,4 +94,3 @@ function extract {
     fi
 fi
 }
-

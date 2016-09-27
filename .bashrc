@@ -57,7 +57,9 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
 
 alias bashreload='cp ~/mine/.bashrc ~/;. ~/.bashrc'
+alias bash_export='cp ~/.bashrc ~/mine/.bashrc;git push --repo ~/mine/'
 alias hg='history | grep '
+alias l='ls -lah'
 
 function extract {
  if [ -z "$1" ]; then

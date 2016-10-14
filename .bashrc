@@ -61,7 +61,10 @@ alias bash_export='cp ~/.bashrc ~/mine/.bashrc'
 alias hg='history | grep '
 alias l='ls -lah --color'
 alias k='clear'
-alias rldbash='. ~/.bashrc'
+alias bash_refresh='. ~/.bashrc'
+alias glg='googler -j'
+alias mongoservicerestore='sudo cp ~/mine/mongo.service /etc/systemd/system/;sudo service mongo start'
+alias servercoon='ssh thecoon@5.39.78.11'
 
 function extract {
  if [ -z "$1" ]; then

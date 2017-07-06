@@ -1,8 +1,7 @@
-Tricks
+#Tricks
 -------
-Int to Char
-  chr(97)
-Char to Int
-  int('A')
+##Int <-> Char
+  -chr(97)
+  -int('A')
   
   

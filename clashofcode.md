@@ -1,6 +1,6 @@
-#Tricks
+# Tricks
 -------
-##Int <-> Char
+## Int <-> Char
   -chr(97)
   -int('A')
   

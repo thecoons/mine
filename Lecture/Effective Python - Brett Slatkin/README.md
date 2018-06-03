@@ -77,11 +77,14 @@ the nonlocal statement.
 5. Avoid using nonlocal statements for anything beyond simple functions.
 
 #### Things to Notice
-1. Functions are first-class objects in Python, meaning you can refer to them directly,
+1. Python has specific rules for comparing tuples. It first compares items in index zero,
+then index one, then index two, and so on. This is why the return value from the
+helper closure causes the sort order to have two distinct groups.
+2. Functions are first-class objects in Python, meaning you can refer to them directly,
 assign them to variables, pass them as arguments to other functions, compare them
 in expressions and if statements, etc. This is how the sort method can accept a
 closure function as the key argument.
-2. The puprose of **\_\_call\_\_** is perfect to implement this behaviour when you want use a class to be more readble or something else
+3. The puprose of **\_\_call\_\_** is perfect to implement this behaviour when you want use a class to be more readble or something else
 
 
 
